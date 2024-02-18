@@ -12,7 +12,7 @@ import {
 
 const App = () => {
     return (
-        <div className="w-full overflow-x-hidden bg-slate-200 px-[100px]">
+        <div className="w-full overflow-x-hidden sm:px-[100px] p-0">
             <Header />
             <Hero />
             <AboutMe />
