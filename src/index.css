@@ -4,5 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.nav-menu {
+    padding: 2rem;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #777, #333);
+    color: white;
+    background-color: black;
+}
+
+.blue-border{
+ border: 2px solid blue;
+}
+
+.red-border{
+ border: 2px solid red;
+}
+
+.green-border{
+ border: 2px solid green;
 }
