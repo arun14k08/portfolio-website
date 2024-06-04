@@ -22,4 +22,25 @@
     );
     backdrop-filter: blur(20px);
     border-radius: 20px;
+    border: 1px solid white;
+}
+.card-sm {
+    background-color: transparent;
+    background-image: radial-gradient(
+        rgba(54, 54, 54, 0.2) 95% rgba(255, 255, 255, 0.1) 5%
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+}
+
+input,
+textarea {
+    padding: 16px 32px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #363636;
+}
+
+.button {
+    @apply px-4 py-2 text-white gradient-bg rounded-md flex gap-2 items-center justify-center;
 }

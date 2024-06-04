@@ -9,7 +9,7 @@ export interface NavLink {
 
 const Header = () => {
     return (
-        <div className="text-[20px] w-full backdrop-blur-xl ring-2 py-6 px-36 fixed top-0 left-0 text-primary ">
+        <div className="text-[20px] w-full backdrop-blur-xl ring-2 py-6 px-36 fixed top-0 left-0 text-primary z-50">
             <div className="flex justify-between items-center">
                 <h2 className="text-3xl font-bold gradient-text cursor-pointer">
                     {"{"}ARUN KUMAR D{"}"}
@@ -17,9 +17,12 @@ const Header = () => {
                 <ul className="flex gap-[64px]">
                     {navLinks.map((navLink) => {
                         return (
-                            <li key={navLink.id} className="hover:underline cursor-pointer underline-offset-4">
+                            <a
+                                key={navLink.id}
+                                className="hover:underline cursor-pointer underline-offset-4"
+                            >
                                 {navLink.name}
-                            </li>
+                            </a>
                         );
                     })}
                 </ul>
@@ -33,14 +36,6 @@ const Header = () => {
                     >
                         <LinkedinLogo />
                     </a>
-                    <a
-                        href="https://drive.google.com/file/d/1nFzirmyQ0CQpwXhlfZep1Mja7wQylx10/view"
-                        target="_blank"
-                        className="px-4 py-2 text-white gradient-bg rounded-md flex gap-2 items-center"
-                    >
-                        Resume
-                        <ArrowRight />
-                    </a>
                 </ul>
             </div>
         </div>
@@ -51,7 +46,7 @@ export const navLinks: NavLink[] = [
     {
         id: "home",
         name: "Home",
-        to: "/",
+        to: "#home",
     },
     {
         id: "about",

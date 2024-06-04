@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
         <div className="md:px-12 min-h-screen text-primary bg-primary">
             <Header />
             {children}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

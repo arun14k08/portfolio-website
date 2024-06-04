@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Profile } from "../assets";
+import { ArrowRight } from "../assets/SVGAssets";
 
 const Hero = () => {
     const animatedText = useRef<HTMLParagraphElement>(null);
@@ -51,6 +52,14 @@ const Hero = () => {
                         <p ref={cursor}>|</p>
                     </div>
                 </div>
+                <a
+                    href="https://drive.google.com/file/d/1nFzirmyQ0CQpwXhlfZep1Mja7wQylx10/view"
+                    target="_blank"
+                    className="button w-fit my-6 text-2xl"
+                >
+                    Resume
+                    <ArrowRight />
+                </a>
             </div>
             <div className="flex justify-center items-center">
                 <div className="p-2 bg-gradient-to-b from-[#E70FAA] to-[#00C0FD] rounded-full">
