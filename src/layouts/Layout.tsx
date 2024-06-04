@@ -8,10 +8,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div className="md:px-12 min-h-screen">
+        <div className="md:px-12 min-h-screen text-primary bg-primary">
             <Header />
             {children}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

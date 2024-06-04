@@ -1,6 +1,6 @@
 import React from "react";
 import { GithubLogo, LinkedinLogo } from "../assets/SVGAssets";
-import { NavLinks } from "./Header";
+import { NavLink, navLinks } from "./Header";
 
 const Footer = () => {
     return (
@@ -10,8 +10,8 @@ const Footer = () => {
                     {"{"}ARUN KUMAR D{"}"}
                 </h2>
                 <ul className="flex gap-4">
-                  <li>+918438642183</li>
-                  <li>arun14k08@gmail.com</li>
+                    <li>+918438642183</li>
+                    <li>arun14k08@gmail.com</li>
                 </ul>
                 <ul className="flex gap-[20px]">
                     <a href="https://github.com/arun14k08" target="_blank">
@@ -28,7 +28,7 @@ const Footer = () => {
             <hr />
             <div>
                 <ul className="flex gap-[64px]">
-                    {NavLinks.map((navLink) => {
+                    {navLinks.map((navLink: NavLink) => {
                         return (
                             <li className="hover:underline cursor-pointer underline-offset-4">
                                 {navLink.name}
