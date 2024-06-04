@@ -9,12 +9,12 @@ import { NavLink, navLinks } from "./Header";
 
 const Footer = () => {
     return (
-        <div className="text-[18px] -mx-12 py-6 px-36 flex flex-col gap-8">
-            <div className="flex justify-between items-center">
+        <div className="text-[18px] -mx-12 py-6 md:px-36 flex flex-col gap-8">
+            <div className="flex md:flex-row md:gap-0 gap-5 flex-col justify-between items-center">
                 <h2 className="text-3xl font-bold gradient-text cursor-pointer">
                     {"{"}ARUN KUMAR D{"}"}
                 </h2>
-                <ul className="flex gap-4">
+                <ul className="flex md:flex-row flex-col gap-4">
                     <li className="flex gap-2">
                         <PhoneIcon /> +918438642183
                     </li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </ul>
             </div>
             <hr />
-            <div>
+            <div className="md:block hidden">
                 <ul className="flex gap-[64px]">
                     {navLinks.map((navLink: NavLink) => {
                         return (

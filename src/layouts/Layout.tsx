@@ -8,7 +8,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div className="md:px-12 min-h-screen text-primary bg-primary">
+        <div className="md:px-12 min-h-screen text-primary bg-primary overflow-hidden">
             <Header />
             {children}
             <Footer />

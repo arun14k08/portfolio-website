@@ -1,20 +1,22 @@
 import React from "react";
-import { languages, tools } from "../assets/tech-stack";
+import { languages, tools } from "../assets/skills";
 
-const TechStack = () => {
+const Skills = () => {
     return (
-        <div className="flex flex-col gap-12 pb-16">
-            <div className="flex flex-col gap-[50px]">
-                <h2 className="text-5xl leading-7 font-bold text-[#CCCCCC] text-center">
+        <div className="flex flex-col gap-12 pb-16 scroll-mt-36" id="skills">
+            <div className="flex flex-col gap-[24px] px-6 md:px-0 md:gap-[50px]">
+                <h2 className="text-4xl md:text-5xl md:leading-7 font-bold text-[#CCCCCC] text-center">
                     Skills
                 </h2>
-                <p className="text-[32px] leading-6 font-normal text-[#A7A7A7] text-center">
-                Here are some of my skills on which I have learnt.
+                <p className="text-2xl md:text-4xl md:leading-6 font-normal text-[#A7A7A7] text-center">
+                    Here are some of my skills on which I have learnt.
                 </p>
             </div>
-            <div className="mx-48 py-6 card flex gap-4 justify-evenly border-2 border-gray-400 rounded-lg">
+            <div className="mx-6 md:mx-48 py-6 card flex md:flex-row flex-col gap-2 md:gap-4 justify-evenly border-2 border-gray-400 rounded-lg">
                 <div className="flex flex-col gap-4">
-                    <h2 className="text-center text-2xl text-primary font-semibold">Languages / Frameworks</h2>
+                    <h2 className="text-center text-lg md:text-2xl text-primary font-semibold">
+                        Languages / Frameworks
+                    </h2>
                     <div className="grid grid-cols-4">
                         {languages.map((language) => {
                             return (
@@ -24,18 +26,20 @@ const TechStack = () => {
                                 >
                                     <img
                                         src={language.src}
-                                        className="size-[72px]"
+                                        className="size-[44px] md:size-[72px]"
                                         alt={language.id}
                                     />
-                                    <p>{language.text}</p>
+                                    <p className="text-base md:text-lg">{language.text}</p>
                                 </div>
                             );
                         })}
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <h2 className="text-center text-2xl text-primary font-semibold">Tools</h2>
-                    <div className="grid grid-cols-3">
+                    <h2 className="text-center text-lg md:text-2xl text-primary font-semibold">
+                        Tools
+                    </h2>
+                    <div className="grid grid-cols-4 md:grid-cols-3">
                         {tools.map((tool) => {
                             return (
                                 <div
@@ -44,10 +48,10 @@ const TechStack = () => {
                                 >
                                     <img
                                         src={tool.src}
-                                        className="size-[72px]"
+                                        className="size-[44px] md:size-[72px]"
                                         alt={tool.id}
                                     />
-                                    <p>{tool.text}</p>
+                                    <p className="text-base md:text-lg text-nowrap">{tool.text}</p>
                                 </div>
                             );
                         })}
@@ -58,4 +62,4 @@ const TechStack = () => {
     );
 };
 
-export default TechStack;
+export default Skills;
