@@ -1,4 +1,3 @@
-import React from "react";
 import { languages, tools } from "../assets/skills";
 
 const Skills = () => {

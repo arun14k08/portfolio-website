@@ -1,4 +1,3 @@
-import React from "react";
 import { GithubLogo, LinkIcon } from "../assets/SVGAssets";
 import { test } from "../assets/projects";
 

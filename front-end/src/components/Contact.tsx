@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contact = () => {
     return (
         <div
@@ -11,6 +9,7 @@ const Contact = () => {
             </p>
             <form
                 action=""
+                onSubmit={(ev) => ev.preventDefault()}
                 className="flex flex-col gap-4 md:w-[700px] md:mx-auto"
             >
                 <input

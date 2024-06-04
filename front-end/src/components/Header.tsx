@@ -1,4 +1,3 @@
-import React from "react";
 import { GithubLogo, LinkedinLogo } from "../assets/SVGAssets";
 
 export interface NavLink {
