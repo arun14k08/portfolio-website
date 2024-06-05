@@ -85,18 +85,21 @@ const Contact = () => {
                     name="name"
                     placeholder="Name"
                     className="text-primary"
+                    required
                 />
                 <input
                     name="email"
                     type="text"
                     placeholder="Email"
                     className="text-primary"
+                    required
                 />
                 <textarea
                     name="message"
                     id=""
                     className="min-h-[200px] md:min-h-[300px]"
                     placeholder="Description"
+                    required
                 ></textarea>
                 <button className="button text-xl" type="submit">
                     {formLoading ? <Spinner /> : "Submit"}
