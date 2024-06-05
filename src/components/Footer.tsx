@@ -38,7 +38,7 @@ const Footer = () => {
                 <ul className="flex gap-[64px]">
                     {navLinks.map((navLink: NavLink) => {
                         return (
-                            <li className="hover:underline cursor-pointer underline-offset-4">
+                            <li key={navLink.id} className="hover:underline cursor-pointer underline-offset-4">
                                 {navLink.name}
                             </li>
                         );

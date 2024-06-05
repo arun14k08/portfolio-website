@@ -24,7 +24,6 @@ const Hero = () => {
     };
     const cursorAnimate = () => {
         const interval = setInterval(() => {
-            console.log(cursor.current?.innerText);
             if (cursor.current)
                 if (cursor.current.innerText === "") {
                     cursor.current.innerText = "|";
